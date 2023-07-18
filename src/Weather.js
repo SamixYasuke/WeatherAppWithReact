@@ -6,7 +6,7 @@ const Weather = ({weatherInfo})=>{
     return(
             <div className="main">
                 <div className="img-div">
-                    <h2>{weatherInfo.main.temp}</h2>
+                    <h2>{weatherInfo.main.temp}°</h2>
                     <img width= "70" height="70" src={img} alt="" />
                 </div>
                 <div className="weather-info-div">
