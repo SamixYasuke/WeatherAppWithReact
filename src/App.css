@@ -2,6 +2,7 @@ body {
    margin: 0;
    padding: 0;
    background-image: url("./Assets/DALL·E\ 2023-07-18\ 11.28.47\ -\ An\ image\ that\ shows\ an\ evening\ sky\ in\ anime\ style.png");
+   background-color: rgb(160, 255, 255);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
