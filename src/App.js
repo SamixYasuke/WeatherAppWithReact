@@ -16,8 +16,9 @@ const App = () => {
   };
 
   const handleGetWeather = async () => {
-    setLoading(true);
     try {
+      setLoading(true);
+      setWeatherInfo(null);
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f08cd5f06fb6a6e5f97490d572b65096&units=metric`;
       const getData = await axios.get(url);
       const data = getData.data;
