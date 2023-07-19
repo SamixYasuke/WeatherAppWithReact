@@ -48,7 +48,7 @@ body {
 }
 
 .location-input-div input{
-   margin-top: 30px;
+   margin-top: 20px;
    padding: 10px 60px;
    border-radius: 30px;
    border-style: dotted;
@@ -74,9 +74,10 @@ body {
 }
 
 @media screen and (max-width: 660px){
-
    body{
-      margin: 40px;
+      margin: 120px auto;
+      display: block;
+
    }
 
    .weather-info-div{
@@ -89,7 +90,8 @@ body {
    }
 
    .main{
-      padding: 25px;
-      width: 89vw;
+      padding: 40px;
+      width: 90vw;
+      margin: 10px auto;
    }
 }
