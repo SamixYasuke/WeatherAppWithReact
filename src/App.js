@@ -28,7 +28,7 @@ const App = () => {
     } catch (err) {
       setLoading(false); // Set loading to false on error as well
       setWeatherInfo(null);
-      setError("An Error Occured Please Recheck The Country/Location You Entered");
+      setError("An Error Occured Please Recheck The Country/Location You Entered Or Connect To The Internet 🥺");
     }
   };
 
