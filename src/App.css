@@ -73,6 +73,10 @@ body {
    grid-template-columns: repeat(1fr);
 }
 
+.loading{
+   text-align: center;
+}
+
 @media screen and (max-width: 660px){
    body{
       margin: 120px auto;
