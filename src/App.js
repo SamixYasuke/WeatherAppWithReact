@@ -16,20 +16,25 @@ const App = () => {
   };
 
   const handleGetWeather = async () => {
-    try {
-      setLoading(true);
-      setWeatherInfo(null);
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f08cd5f06fb6a6e5f97490d572b65096&units=metric`;
-      const getData = await axios.get(url);
-      const data = getData.data;
-      setWeatherInfo(data);
-      setError(null);
-      setLoading(false); // Set loading to false after successful data fetch
-    } catch (err) {
-      setLoading(false); // Set loading to false on error as well
-      setWeatherInfo(null);
-      setError("An Error Occured Please Recheck The Country/Location You Entered Or Connect To The Internet 🥺");
+    if(city !== ""){
+      try {
+        setLoading(true);
+        setWeatherInfo(null);
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f08cd5f06fb6a6e5f97490d572b65096&units=metric`;
+        const getData = await axios.get(url);
+        const data = getData.data;
+        setWeatherInfo(data);
+        setError(null);
+        setLoading(false);
+      } catch (err) {
+        setLoading(false);
+        setWeatherInfo(null);
+        setError("An Error Occured Please Recheck The Country/Location You Entered Or Connect To The Internet 🥺");
+      }
+    }else{
+      alert("Please Enter a City/Location 🥺")
     }
+    
   };
 
   return (
