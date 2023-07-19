@@ -11,7 +11,7 @@ const Weather = ({weatherInfo})=>{
                 </div>
                 <div className="weather-info-div">
                     <h3>{weatherInfo.weather[0].description}</h3>
-                    <h3>Humidity: {weatherInfo.main.humidity}</h3>
+                    <h3>Humidity: {weatherInfo.main.humidity} g/m3</h3>
                     <h3>Country Code: {weatherInfo.sys.country}</h3>
                     <h3>Country/City: {weatherInfo.name}</h3>
                     <h3>Wind Speed: {weatherInfo.wind.speed}</h3>
