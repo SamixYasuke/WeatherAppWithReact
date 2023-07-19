@@ -13,7 +13,7 @@ const Weather = ({weatherInfo})=>{
                     <h3>{weatherInfo.weather[0].description}</h3>
                     <h3>Humidity: {weatherInfo.main.humidity}</h3>
                     <h3>Country Code: {weatherInfo.sys.country}</h3>
-                    <h3>City: {weatherInfo.name}</h3>
+                    <h3>Country/City: {weatherInfo.name}</h3>
                     <h3>Wind Speed: {weatherInfo.wind.speed}</h3>
                     <h3>Pressure: {weatherInfo.main.pressure}hPa</h3>
                     <h3>Longitude: {weatherInfo.coord.lon}</h3>
